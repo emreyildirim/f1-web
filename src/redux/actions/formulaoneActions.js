@@ -54,7 +54,7 @@ export const getPole = () => async (dispatch) => {
 
 export const getAllSeasons =() => async (dispatch)=>{
   const res = await axios.get (
-    "http://ergast.com/api/f1/seasons.json?limit=85"
+    "https://ergast.com/api/f1/seasons.json?limit=85"
   );
   dispatch({
     type:GET_ALL_SEASONS,
@@ -74,7 +74,7 @@ export const getSeason = (season) => async (dispatch) => {
 
 export const getResult = (season,id) => async (dispatch) => {
   const res = await axios.get(
-      "http://ergast.com/api/f1/"+season+"/"+id+"/results.json"
+      "https://ergast.com/api/f1/"+season+"/"+id+"/results.json"
     );
     dispatch({
       type: GET_RESULTS,
