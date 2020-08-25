@@ -1,0 +1,14 @@
+.schedules{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 700px;
+    width: 70%;
+    margin:50px;
+
+    @media screen and (max-width: 1140px) {
+        flex-wrap: nowrap;
+        height: 100vh;
+      }
+}

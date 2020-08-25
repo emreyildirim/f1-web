@@ -1,0 +1,144 @@
+.Results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+
+  .card {
+    &:nth-child(1) {
+      margin-top: 0px;
+      order: 2;
+    }
+    &:nth-child(2) {
+      margin-top: 60px;
+      order: 3;
+    }
+    &:nth-child(3) {
+      margin-top: 120px;
+      order: 1;
+    }
+  }
+  @media screen and (max-width: 1139px) {
+    flex-direction: column;
+    align-items: center;
+    .card {
+      &:nth-child(1) {
+        margin-top: 20px;
+        
+        order: 1;
+      }
+      &:nth-child(2) {
+        order: 2;
+      }
+      &:nth-child(3) {
+        order: 3;
+      }
+    }
+  }
+  @media screen and (max-width: 759px) {
+    .card {
+      &:nth-child(1) {
+        margin-top: 20px;
+        order: 1;
+      }
+      &:nth-child(2) {
+        order: 2;
+      }
+      &:nth-child(3) {
+        order: 3;
+      }
+    }
+  }
+
+  #table-results {
+    order: 4;
+    margin-top: 20px;
+  }
+}
+
+.dropdowns {
+  display: flex;
+  width: 90%;
+  margin: auto;
+
+  @media screen and(max-width:955px) {
+    font-size: 12px;
+  }
+  @media screen and(max-width:759px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    .list {
+      min-width: 100%;
+    }
+    .tv {
+      min-width: 100%;
+    }
+  }
+
+  .list {
+    height: 100px;
+    width: 33%;
+    padding: 20px;
+    background: rgba(204, 204, 204, 0.37);
+    overflow-y: scroll;
+    list-style-type: none;
+    text-align: center;
+    border-right: 2px solid white;
+
+    &:nth-child(1){
+      border-radius: 10px 0 0 10px;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .list-items {
+      margin-bottom: 10px;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: white;
+      }
+    }
+  }
+  .tv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 33%;
+    padding: 20px;
+    margin-top: 16px;
+    border-radius: 0 10px 10px 0;
+    background: rgba(204, 204, 204, 0.37);
+    cursor: pointer;
+
+    * {
+      height: 30px;
+      margin-top: 10px;
+    }
+    &:visited,
+    &:focus {
+      color: white;
+    }
+
+    .logo {
+      width: 100px;
+      margin-left: 20px;
+      margin-right: 5px;
+      background-image: url(https://www.formula1.com/etc/designs/fom-website/images/f1-logo-red.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .logo-text {
+      font-size: 32px;
+      line-height: 30px;
+      vertical-align: middle;
+      margin-bottom: 5px;
+    }
+  }
+}

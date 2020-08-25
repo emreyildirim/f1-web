@@ -1,0 +1,44 @@
+.race{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    width: 500px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 14px;
+    border:3px solid white;
+    background-color:rgba(22, 21, 21, 0.514);
+    box-shadow: 10px 8px 7px 0px rgba(0,0,0,0.75);
+    font-size: 20px;
+    cursor: default;
+        img{
+             width: 70px;
+             height: 50px;
+             margin-left:10px;
+
+        }
+    .race-name{
+        width: 250px;
+        line-height: 45px; 
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .race-date{
+        width: 155px;
+        line-height: 75px;
+        border-top-right-radius:14px;
+        border-bottom-right-radius:14px;
+        background-color:rgba(245, 6, 6, 0.74);
+        text-align: right;
+        margin-left:10px;
+        clip-path: polygon(21% 0, 100% 0, 100% 100%, 0 100%);
+        i{
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+    }
+}
