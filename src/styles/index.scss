@@ -7,8 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(../background.jpg);
   background-size: cover;
-  color:white
-}
+  color:white;
+  a{
+    color: rgba(249, 243, 243, 1);
+    &:visited,
+    &:focus {
+      color: rgba(249, 243, 243, 1);
+    }
+  }
+  }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
