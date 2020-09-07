@@ -5,12 +5,11 @@ import DriverStandings from "../components/driverstandings";
 
 const Drivers = () => {
   const dispatch = useDispatch();
-  const _drivers = useSelector((state) => state.formulaone);
+  const f1 = useSelector((state) => state.formulaone);
 
   useEffect(() => {
     dispatch(getDrivers());
   }, [dispatch]);
-  console.log(_drivers);
   return (
     <Fragment>
       <table className="table">
@@ -23,7 +22,7 @@ const Drivers = () => {
         </tr>
         </thead>
         <tbody>
-          {_drivers.drivers.map((driver) => (
+          {f1.drivers.map((driver) => (
             <DriverStandings
               position={driver.position}
               name={driver.Driver.givenName}

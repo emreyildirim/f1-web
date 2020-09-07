@@ -75,8 +75,8 @@ const Results = () => {
               <thead>
                 <tr className="headers">
                   <th>POS</th>
-                  <th>NUMBER</th>
                   <th>DRIVER</th>
+                  <th>NUMBER</th>
                   <th>CAR</th>
                 </tr>
               </thead>

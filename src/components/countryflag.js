@@ -10,6 +10,13 @@ const Flag = (props) => {
         alt={props.country}
       />
     );
+  if (props.country === "uae")
+    return (
+      <img
+        src="https://cdn.countryflags.com/thumbs/united-arab-emirates/flag-800.png"
+        alt={props.country}
+      />
+    );
   return <img src={source} alt={props.country} />;
 };
 
